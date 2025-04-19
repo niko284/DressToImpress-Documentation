@@ -20,17 +20,18 @@ No more copy/pasting. No more overwriting each other’s work. ✅
 
 ## 📁 Folder Structure: Where Are Packages Stored?
 
-All shared content is stored in folders under `ReplicatedStorage.Assets`, and many of these are **packages**.
+For example, consider all shared content is stored in folders under `ReplicatedStorage.Assets`, where
+the **Assets** folder is the package.
 
 ```
 ReplicatedStorage
 └── Assets (📦 Package)
-    ├── Modules (📦 Package)
-    ├── UI (📦 Package)
-    └── Models (📦 Package)
+    ├── Modules
+    ├── UI 
+    └── Models
 ```
 
-Each of these folders is a **package**. If you change anything inside, it will become “out of sync” until you **publish** it.
+Each of these folders is under the Assets **package**. If you change anything inside, it will become “out of sync” until you **publish** it.
 
 ---
 
@@ -42,17 +43,20 @@ Here’s what a typical **Modules** package looks like inside Roblox Studio:
 
 > This is a shared folder that contains Lua modules used in multiple places across the game.  
 > Any time someone changes a script inside it and **publishes** it, others can **pull** the update.
+> By doing that, they will get any changed scripts inside the package up-to-date!
 
 ---
 
 ## 🟡 What Happens When You Edit a Package?
 
-When you make a change inside a package folder, you'll see this icon:
+When you make a change inside a package folder, you'll see a small yellow circle:
 
-- ⚠️ Yellow box = **Out of sync**
-- 🔄 Why? You made a local change that hasn't been published yet
+- ⚠️ Yellow circle = **Out of sync**
+- 🔄 Why? You made a local change that hasn't been published to the package yet
 
 If others don’t have your changes, their version will become **outdated**. That's why you must always **publish** after you're done editing shared code/assets.
+
+![Icon](../../assets/PackageImage.png)
 
 ---
 
