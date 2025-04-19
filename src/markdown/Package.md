@@ -47,16 +47,16 @@ Here’s what a typical **Modules** package looks like inside Roblox Studio:
 
 ---
 
-## 🟡 What Happens When You Edit a Package?
+## 🟡 What happens when you edit something under a Package?
 
 When you make a change inside a package folder, you'll see a small yellow circle:
 
 - ⚠️ Yellow circle = **Out of sync**
-- 🔄 Why? You made a local change that hasn't been published to the package yet
+- 🔄 Why? You made a local change inside the package that hasn't been published yet!
 
 If others don’t have your changes, their version will become **outdated**. That's why you must always **publish** after you're done editing shared code/assets.
 
-![Icon](../../assets/PackageImage.png)
+![Icon](../../assets/WarningImage.png)
 
 ---
 
