@@ -19,10 +19,7 @@ All documentation files are located under `src/markdowns/`. Click below to jump 
 
 - [Workflow Overview](src/markdown/Workflow.md)
 <!-- Add more files below as they are created -->
-- [Asset Pipeline](src/markdowns/AssetPipeline.md)
-- [UI/UX Design Process](src/markdowns/UIDesign.md)
-- [Game Loop & Systems](src/markdowns/GameLoop.md)
-- [Testing & QA](src/markdowns/Testing.md)
+- [What is a package?](src/markdowns/Package.md)
 
 ---
 
