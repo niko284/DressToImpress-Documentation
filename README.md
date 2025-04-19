@@ -19,7 +19,7 @@ All documentation files are located under `src/markdowns/`. Click below to jump 
 
 - [Workflow Overview](src/markdown/Workflow.md)
 <!-- Add more files below as they are created -->
-- [What is a package?](src/markdowns/Package.md)
+- [What is a package?](src/markdownPackage.md)
 
 ---
 
