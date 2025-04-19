@@ -18,6 +18,22 @@ No more copy/pasting. No more overwriting each other’s work. ✅
 
 ---
 
+## 📁 Folder Structure: Where Are Packages Stored?
+
+All shared content is stored in folders under `ReplicatedStorage.Assets`, and many of these are **packages**.
+
+```
+ReplicatedStorage
+└── Assets (📦 Package)
+    ├── Modules (📦 Package)
+    ├── UI (📦 Package)
+    └── Models (📦 Package)
+```
+
+Each of these folders is a **package**. If you change anything inside, it will become “out of sync” until you **publish** it.
+
+---
+
 ## 🗂 Example: Modules Package
 
 Here’s what a typical **Modules** package looks like inside Roblox Studio:
@@ -29,14 +45,29 @@ Here’s what a typical **Modules** package looks like inside Roblox Studio:
 
 ---
 
+## 🟡 What Happens When You Edit a Package?
+
+When you make a change inside a package folder, you'll see this icon:
+
+- ⚠️ Yellow box = **Out of sync**
+- 🔄 Why? You made a local change that hasn't been published yet
+
+If others don’t have your changes, their version will become **outdated**. That's why you must always **publish** after you're done editing shared code/assets.
+
+---
+
 ## 🚀 Step-by-Step: Publishing a Package
 
 If you made a change to a shared asset (like a UI element, model, or script), you’ll want to **publish** the package so others can get it.
 
-Here’s how:
+### ✅ Example
+> Nick edits a script inside `Modules` to fix inventory syncing.  
+> When he’s done, he publishes the package so everyone else can update.
 
-1. Right-click the package folder in the Explorer
-2. Click `Publish Package` → `Publish Changes`
+**How to publish:**
+
+1. Right-click the package folder in the Explorer  
+2. Click `Publish to Package` → `Publish`
 
 ![Publish Package](../../assets/PublishPackage.png)
 
@@ -48,10 +79,14 @@ Here’s how:
 
 If someone else made changes to a shared package, you’ll want to **sync** to get their new version.
 
-Here’s how:
+### ✅ Example
+> Kyle is working in his own branch. He sees that `Modules` is out of sync, and Nick already published changes.  
+> Kyle syncs the package and instantly gets the updated code.
 
-1. Right-click the package folder in your Explorer
-2. Click `Package` → `Update to Latest Version`
+**How to sync:**
+
+1. Right-click the package folder in your Explorer  
+2. Click `Get Latest for Selected Packages` → `Get Latest`
 
 ![Sync Package](../../assets/SyncPackage.png)
 
@@ -64,7 +99,7 @@ Here’s how:
 - **Packages** are folders shared across branches
 - You can **publish** your changes so others can get them
 - You can **sync** to stay up to date with everyone else
-- Used for: `Modules`, `UIAssets`, `3D Models`, etc.
+- Used for: `Scripts`, `UI Assets`, `3D Models`, etc.
 - Keeps everyone in sync and avoids reintroducing bugs
 
 ---
@@ -72,8 +107,8 @@ Here’s how:
 ## 📚 Learn More
 
 - 📖 Official Roblox Docs: [Using Packages](https://create.roblox.com/docs/projects/assets/packages)
-- 🧠 See how we use packages in practice: [Workflow.md](Workflow.md)
+- 🧠 See how we use packages in practice: [DTI Workflow](Workflow.md)
 
 ---
 
-Keep things in sync. Use packages. Happy developing! 🛠
+Keep things in sync. Use packages!!
